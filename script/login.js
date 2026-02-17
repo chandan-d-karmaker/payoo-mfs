@@ -10,6 +10,8 @@ document.getElementById("btn-login").addEventListener('click', function()
 
     if(contactNumber == '01798693868' && password == '115912'){
         alert("Login Successful");
+
+        window.location.assign("./home.html");
     }
     else{
         alert("Login Failed");
