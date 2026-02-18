@@ -5,7 +5,7 @@ document.getElementById("btn-cashout").addEventListener("click", function()
     const agentNumValue = agentNum.value;
     // console.log(agentNumValue);
     if(agentNumValue.length != 11 ){
-        alert("Invaild Agent Number!");
+        alert("Invalid Agent Number!");
         return;
     }
 
