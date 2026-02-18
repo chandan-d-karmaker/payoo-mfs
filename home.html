@@ -32,7 +32,7 @@
         <div class="flex">
             <img src="./assets/logo.png" alt="" class="w-[60px] mr-1">
             <div>
-                <h1 class="text-xl font-bold">$67676</h1>
+                <h1 class="text-xl font-bold">$<span id="balance">67676</span></h1>
                 <p class="text-neutral/50">Available Balance</p>
             </div>
         </div>
@@ -110,10 +110,12 @@
             <label class="label font-bold  text-neutral">Pin Number</label>
             <input id="user-pass" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin Number" />
 
-            <button id="btn-login" class="btn btn-primary mt-4 rounded-full">Login</button>
+            <button id="btn-cashout" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
         </fieldset>
     </div>
     </section>
+
+    <script src="script/cashout.js"></script>
 
 </body>
 
