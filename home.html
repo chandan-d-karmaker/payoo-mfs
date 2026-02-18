@@ -21,27 +21,96 @@
 
 </head>
 
-<body>
+<body class="min-h-screen max-w-md mx-auto bg-base-200 outfit-font">
 
-</body class="min-h-screen max-w-md mx-auto bg-base-200 outfit-font">
+    <!-- upper section -->
+    <div class="rounded-b-2xl bg-base-100 pb-6 mb-4">
 
-<header class="border-b-2 border-gray-400 flex justify-around px-6 py-5">
+        <header class="border-b-2 border-gray-300 flex justify-around items-center px-6 py-5 mb-8">
 
-    <!-- icon and balance -->
-    <div class="flex justify-start items-start">
-        <img src="./assets/logo.png" alt="" class="w-[60px]">
-        <div>
-            <h1>$676767</h1>
-            <p>Available Balance</p>
+        <!-- icon and balance -->
+        <div class="flex">
+            <img src="./assets/logo.png" alt="" class="w-[60px] mr-1">
+            <div>
+                <h1 class="text-xl font-bold">$67676</h1>
+                <p class="text-neutral/50">Available Balance</p>
+            </div>
         </div>
+
+        <!-- logout -->
+        <div>
+            <a href="./index.html" class="btn btn-outline btn-secondary">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+        </div>
+
+    </header>
+
+    <!-- welcome section -->
+    <section class="mx-auto w-4/5 space-y-5">
+
+        <!-- title -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold">Welcome to Pay<span class="text-primary">oo</span></h2>
+            <p class="text-[16px] text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge
+                is low and</p>
+        </div>
+
+        <!-- functions -->
+        <div class="grid grid-cols-3 gap-y-4 gap-x-4">
+
+            <!-- function-1 -->
+            <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <img src="./assets/opt-1.png" alt="">
+                <h1 class="text-[#080808B2]">Add Money</h1>
+            </button>
+            <!-- function-2 -->
+            <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <img src="./assets/opt-2.png" alt="">
+                <h1 class="text-[#080808B2]">Cash Out</h1>
+            </button>
+            <!-- function-3 -->
+            <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <img src="./assets/opt-3.png" alt="">
+                <h1 class="text-[#080808B2]">Send Money</h1>
+            </button>
+            <!-- function-4 -->
+            <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <img src="./assets/opt-4.png" alt="">
+                <h1 class="text-[#080808B2]">Get Bonus</h1>
+            </button>
+            <!-- function-5 -->
+            <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <img src="./assets/opt-5.png" alt="">
+                <h1 class="text-[#080808B2]">Pay Bill</h1>
+            </button>
+            <!-- function-6 -->
+            <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <img src="./assets/opt-6.png" alt="">
+                <h1 class="text-[#080808B2]">Transaction</h1>
+            </button>
+
+        </div>
+    </section>
     </div>
 
-    <!-- logout -->
-    <div>
-        <a href="./index.html" class="btn btn-outline btn-secondary">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+    <!-- cashout section form -->
+    <section id="cash-out" class="w-4/5 mx-auto py-5">
+        <h1 class="text-xl font-bold mb-4">Cash Out</h1>
+
+        <!-- form -->
+        <div>
+        <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-full border p-8 mx-auto rounded-3xl">
+            <label class="label font-bold  text-neutral">Mobile Number</label>
+            <input id="user-number" maxlength="11" minlength="11" type="text" class="input mb-4 rounded-full bg-base-200" placeholder="Enter your number" />
+
+            <label class="label font-bold  text-neutral">4 Digit Pin</label>
+            <input id="user-pass" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
+
+            <button id="btn-login" class="btn btn-primary mt-4 rounded-full">Login</button>
+        </fieldset>
     </div>
-    
-</header>
+    </section>
+
+</body>
 
 </html>
