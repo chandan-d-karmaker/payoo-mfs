@@ -1,9 +1,13 @@
 document.getElementById("btn-cashout").addEventListener("click", function()
 {
-    // get agent number
+    // get agent number and verify
     const agentNum = document.getElementById("agent-number");
     const agentNumValue = agentNum.value;
     // console.log(agentNumValue);
+    if(agentNumValue.length != 11 ){
+        alert("Invaild Agent Number!");
+        return;
+    }
 
     // get cashout amount
     const cashoutMoney = document.getElementById("cashout-money");
