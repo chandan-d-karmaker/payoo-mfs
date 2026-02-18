@@ -1,18 +1,14 @@
 document.getElementById("btn-cashout").addEventListener("click", function()
 {
     // get agent number and verify
-    const agentNum = document.getElementById("agent-number");
-    const agentNumValue = agentNum.value;
-    // console.log(agentNumValue);
+    const agentNumValue = getValueOfInput("agent-number");
     if(agentNumValue.length != 11 ){
         alert("Invalid Agent Number!");
         return;
     }
 
     // get cashout amount
-    const cashoutMoney = document.getElementById("cashout-money");
-    const cashOutValue = cashoutMoney.value;
-    console.log(cashOutValue);
+    const cashOutValue = getValueOfInput("cashout-money");
 
     // get current balance
     const balanceEle = document.getElementById("balance");
@@ -28,8 +24,7 @@ document.getElementById("btn-cashout").addEventListener("click", function()
     }
 
     // get pass and verify
-    const userPass = document.getElementById('user-pass');
-    const pass = userPass.value;
+    const pass = getValueOfInput("user-pass");
 
     if(pass == '115912'){
         alert("CashOut successful");
