@@ -17,16 +17,16 @@ document.getElementById("btn-add").addEventListener("click", function(){
 
     // get add money amount
     const AddAmount = getValueOfInput("add-money");
-    console.log(AddAmount);
+    // console.log(AddAmount);
 
     // update balance
     const currBal = getBalance();
     const newBalance = currBal + Number(AddAmount);
 
     // check pass
-    const pass = getValueOfInput("user-pass");
+    const pass = getValueOfInput("user-pass-add");
 
-    if(pass == '115912'){
+    if(pass == '1234'){
         alert(`Add Money Successfully from ${bankAcc} at ${new Date()}`);
         setBalance(newBalance);
 

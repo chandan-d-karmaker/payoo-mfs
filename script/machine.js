@@ -3,7 +3,9 @@ function getValueOfInput(id)
 {
     const ip = document.getElementById(id);
     const value = ip.value;
+    console.log(value);
     return value;
+    
 }
 
 //  returns the current balance

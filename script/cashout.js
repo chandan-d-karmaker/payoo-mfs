@@ -22,9 +22,9 @@ document.getElementById("btn-cashout").addEventListener("click", function()
     }
 
     // get pass and verify
-    const pass = getValueOfInput("user-pass");
+    const pass = getValueOfInput("user-pass-out");
 
-    if(pass == '115912'){
+    if(pass == '1234'){
         alert("CashOut successful");
         setBalance(newBalance);
 

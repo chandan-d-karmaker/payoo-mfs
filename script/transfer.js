@@ -22,7 +22,7 @@ document.getElementById("btn-send-money").addEventListener("click", function()
     }
 
     // get pass and verify
-    const pass = getValueOfInput("user-pass");
+    const pass = getValueOfInput("user-pass-transfer");
 
     if(pass == '115912'){
         alert(`Transfer Money Successfully to ${sendNumValue} at ${new Date()}`);

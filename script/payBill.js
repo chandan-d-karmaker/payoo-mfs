@@ -1,20 +1,20 @@
-document.getElementById("btn-cashout").addEventListener("click", function()
-{
-    // get agent number and verify
-    const agentNumValue = getValueOfInput("agent-number");
-    if(agentNumValue.length != 11 ){
-        alert("Invalid Agent Number!");
+document.getElementById("btn-pay-now").addEventListener("click", function()
+{   
+    // get service type
+    const serviceType = getValueOfInput("service");
+    if(serviceType == 'Services'){
+        alert("Select a service First");
         return;
     }
 
-    // get cashout amount
-    const cashOutValue = getValueOfInput("cashout-money");
+    // get pay amount
+    const payValue = getValueOfInput("pay-money");
 
     // get current balance
     const currentBalance = getBalance();
 
     // calculate new balance
-    const newBalance = currentBalance - Number(cashOutValue);
+    const newBalance = currentBalance - Number(payValue);
   
     if(newBalance<0){
         alert("Insufficient Amount");
@@ -22,10 +22,10 @@ document.getElementById("btn-cashout").addEventListener("click", function()
     }
 
     // get pass and verify
-    const pass = getValueOfInput("user-pass");
+    const pass = getValueOfInput("user-pass-pay");
 
     if(pass == '115912'){
-        alert("CashOut successful");
+        alert(`${serviceType} bill paid successfully at ${new Date()}`);
         setBalance(newBalance);
 
     } else{
