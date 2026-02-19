@@ -33,12 +33,15 @@ function showOnly(id){
     const transferMoney = document.getElementById("transfer-section");
     const getBonus = document.getElementById("bonus-section");
     const payBill = document.getElementById("pay-bill-section");
+    const History = document.getElementById("history-section");
+
 
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
     transferMoney.classList.add("hidden");
     getBonus.classList.add("hidden");
     payBill.classList.add("hidden");
+    History.classList.add("hidden");
 
    const show = document.getElementById(id);
    show.classList.remove("hidden");
