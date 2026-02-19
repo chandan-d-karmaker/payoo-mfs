@@ -155,6 +155,31 @@
         </div>
     </section>
 
+    <!-- Transfer money section form -->
+    <section id="cash-out" class="w-4/5 mx-auto py-5">
+        <h1 class="text-xl font-bold mb-4">Transfer Money</h1>
+
+        <!-- form -->
+        <div>
+            <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-full border p-8 rounded-3xl">
+
+                <label class="label font-bold  text-neutral">User Account Number</label>
+                <input id="send-user-number" maxlength="11" minlength="11" type="text"
+                    class="input mb-4 rounded-full bg-base-200 px-5 py-4" placeholder="Enter 11 Digit number" />
+
+                <label class="label font-bold  text-neutral">Amount</label>
+                <input id="transfer-money" type="number" class="input rounded-full bg-base-200 mb-4 px-5 py-4"
+                    placeholder="Enter Amount" />
+
+                <label class="label font-bold  text-neutral">Pin Number</label>
+                <input id="user-pass" type="password" class="input rounded-full bg-base-200 px-5 py-4"
+                    placeholder="Enter 4 Digit Pin Number" />
+
+                <button id="btn-send-money" class="btn btn-primary mt-4 rounded-full">Send Money</button>
+            </fieldset>
+        </div>
+    </section>
+
 
     <script src="./script/machine.js"></script>
     <script src="./script/addMoney.js"></script>

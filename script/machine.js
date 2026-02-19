@@ -32,3 +32,8 @@ function setBalance(value){
 //         return;
 //     }
 // }
+
+// hide and show
+function ShowOnly(id){
+    const 
+}
