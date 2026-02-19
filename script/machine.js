@@ -21,17 +21,8 @@ function setBalance(value){
 
 // pass check
 
-// function checkPass(){
-//     const pass = getValueOfInput("user-pass");
 
-//     if(pass == '115912'){
-//         alert("Successful");
 
-//     } else{
-//         alert("Invalid Pin!");
-//         return;
-//     }
-// }
 
 // hide and show
 // function ShowOnly(id){

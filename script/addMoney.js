@@ -17,6 +17,7 @@ document.getElementById("btn-add").addEventListener("click", function(){
 
     // get add money amount
     const AddAmount = getValueOfInput("add-money");
+    console.log(AddAmount);
 
     // update balance
     const currBal = getBalance();
