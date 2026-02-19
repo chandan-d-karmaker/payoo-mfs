@@ -34,6 +34,7 @@ function showOnly(id){
     const getBonus = document.getElementById("bonus-section");
     const payBill = document.getElementById("pay-bill-section");
     const History = document.getElementById("history-section");
+    const payments = document.getElementById("latest-section");
 
 
     addMoney.classList.add("hidden");
@@ -42,6 +43,7 @@ function showOnly(id){
     getBonus.classList.add("hidden");
     payBill.classList.add("hidden");
     History.classList.add("hidden");
+    payments.classList.add("hidden");
 
    const show = document.getElementById(id);
    show.classList.remove("hidden");
