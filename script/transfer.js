@@ -28,6 +28,23 @@ document.getElementById("btn-send-money").addEventListener("click", function()
         alert(`Transfer Money Successfully to ${sendNumValue} at ${new Date()}`);
         setBalance(newBalance);
 
+        // transaction history
+        // get the history container
+        const history = document.getElementById("history-container");
+
+        // create new history
+        const newHistory = document.createElement('div');
+
+        // set inner text
+        newHistory.innerHTML = `
+            <div id="transaction-card" class="p-5 bg-base-100 rounded-xl">
+                Transfer Money Successfully to ${sendNumValue} , Amount: ${transferValue}Tk  at ${new Date()}  Current balance: ${newBalance}
+            </div>
+            
+        `
+        // append to parent
+        history.appendChild(newHistory);
+
     } else{
         alert("Invalid Pin!");
         return;
