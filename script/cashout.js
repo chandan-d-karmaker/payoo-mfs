@@ -28,6 +28,23 @@ document.getElementById("btn-cashout").addEventListener("click", function()
         alert("CashOut successful");
         setBalance(newBalance);
 
+          // transaction history
+        // get the history container
+        const history = document.getElementById("history-container");
+
+        // create new history
+        const newHistory = document.createElement('div');
+
+        // set inner text
+        newHistory.innerHTML = `
+            <div id="transaction-card" class="p-5 bg-base-100 rounded-xl">
+                Cash out Successfully  ${cashOutValue}Tk to ${agentNumValue} at ${new Date()} Current balance: ${newBalance}
+            </div>
+            
+        `
+        // append to parent
+        history.appendChild(newHistory);
+
     } else{
         alert("Invalid Pin!");
         return;

@@ -40,7 +40,7 @@ document.getElementById("btn-add").addEventListener("click", function(){
         // set inner text
         newHistory.innerHTML = `
             <div id="transaction-card" class="p-5 bg-base-100 rounded-xl">
-                Add Money Successfully from ${bankAcc} account number ${accNum} at ${new Date()}
+                Add Money Successfully from ${bankAcc} Account number: ${accNum} Amount: ${AddAmount} at ${new Date()} Current balance: ${newBalance}
             </div>
             
         `
