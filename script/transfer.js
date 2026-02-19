@@ -24,7 +24,7 @@ document.getElementById("btn-send-money").addEventListener("click", function()
     // get pass and verify
     const pass = getValueOfInput("user-pass-transfer");
 
-    if(pass == '115912'){
+    if(pass == '1234'){
         alert(`Transfer Money Successfully to ${sendNumValue} at ${new Date()}`);
         setBalance(newBalance);
 
