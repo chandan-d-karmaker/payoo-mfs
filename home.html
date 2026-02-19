@@ -61,27 +61,32 @@
             <div class="grid grid-cols-3 gap-y-4 gap-x-4">
 
                 <!-- function-1 -->
-                <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <button onclick="showOnly('add-money-section')"
+                    class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
                     <img src="./assets/opt-1.png" alt="">
                     <h1 class="text-[#080808B2]">Add Money</h1>
                 </button>
                 <!-- function-2 -->
-                <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <button onclick="showOnly('cash-out-section')"
+                    class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
                     <img src="./assets/opt-2.png" alt="">
                     <h1 class="text-[#080808B2]">Cash Out</h1>
                 </button>
                 <!-- function-3 -->
-                <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <button onclick="showOnly('transfer-section')"
+                    class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
                     <img src="./assets/opt-3.png" alt="">
-                    <h1 class="text-[#080808B2]">Send Money</h1>
+                    <h1 class="text-[#080808B2]">Transfer Money</h1>
                 </button>
                 <!-- function-4 -->
-                <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <button onclick="showOnly('bonus-section')"
+                    class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
                     <img src="./assets/opt-4.png" alt="">
                     <h1 class="text-[#080808B2]">Get Bonus</h1>
                 </button>
                 <!-- function-5 -->
-                <button class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
+                <button onclick="showOnly('pay-bill-section')"
+                    class="btn btn-outline btn-secondary flex-col h-full px-4 py-4">
                     <img src="./assets/opt-5.png" alt="">
                     <h1 class="text-[#080808B2]">Pay Bill</h1>
                 </button>
@@ -230,6 +235,16 @@
                 <button id="btn-pay-now" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
             </fieldset>
         </div>
+    </section>
+
+    <!-- Transaction History-->
+    <section id="trans-history" class="w-4/5 mx-auto py-5">
+
+        <h1 class="text-xl font-bold mb-4">Transaction</h1>
+        <div id="history-container" class="space-y-5">
+            
+        </div>
+
     </section>
 
 

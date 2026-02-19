@@ -27,6 +27,19 @@ function setBalance(value){
 
 
 // hide and show
-// function ShowOnly(id){
-//     const 
-// }
+function showOnly(id){
+    const addMoney = document.getElementById("add-money-section");
+    const cashOut = document.getElementById("cash-out-section");
+    const transferMoney = document.getElementById("transfer-section");
+    const getBonus = document.getElementById("bonus-section");
+    const payBill = document.getElementById("pay-bill-section");
+
+    addMoney.classList.add("hidden");
+    cashOut.classList.add("hidden");
+    transferMoney.classList.add("hidden");
+    getBonus.classList.add("hidden");
+    payBill.classList.add("hidden");
+
+   const show = document.getElementById(id);
+   show.classList.remove("hidden");
+}

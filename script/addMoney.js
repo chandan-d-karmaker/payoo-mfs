@@ -30,6 +30,23 @@ document.getElementById("btn-add").addEventListener("click", function(){
         alert(`Add Money Successfully from ${bankAcc} at ${new Date()}`);
         setBalance(newBalance);
 
+        // transaction history
+        // get the history container
+        const history = document.getElementById("history-container");
+
+        // create new history
+        const newHistory = document.createElement('div');
+
+        // set inner text
+        newHistory.innerHTML = `
+            <div id="transaction-card" class="p-5 bg-base-100 rounded-xl">
+                Add Money Successfully from ${bankAcc} account number ${accNum} at ${new Date()}
+            </div>
+            
+        `
+        // append to parent
+        history.appendChild(newHistory);
+
     } else{
         alert("Invalid Pin!");
         return;
